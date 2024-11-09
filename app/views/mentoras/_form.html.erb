@@ -1,0 +1,22 @@
+<div class="form-container">
+  <%= form_with(model: @mentora) do |form| %>
+    <div>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+    </div>
+
+    <div>
+      <%= form.label :email %><br>
+      <%= form.text_field :email %><br>
+    </div>
+
+    <div>
+      <%= form.label :habilidades %><br>
+      <%= form.text_area :habilidades %>
+    </div>
+
+    <div>
+      <%= form.submit  class: "create-btn" %>
+    </div>
+  <% end %>
+</div>

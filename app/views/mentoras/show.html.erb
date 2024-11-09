@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="data">
+    <%= render @mentora %>
+  </div>
+  <div class="buttons">
+    <div class="div-btn">
+      <%= button_to "deletar", @mentora, method: :delete, class: "btn-style" %>
+    </div>
+    <div class="div-btn">
+      <button class="btn-cadastro">
+        <%= link_to "editar usuario", edit_mentora_path(@mentora), class: "btn-style"%>
+      </button> 
+    </div>
+    <div class="div-btn">
+      <button class="btn-cadastro">
+        <%= link_to "voltar", mentoras_path, class: "btn-style" %>
+      </button> 
+    </div>
+  </div>
+</div>

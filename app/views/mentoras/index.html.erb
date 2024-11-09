@@ -1,0 +1,22 @@
+<div class="index">
+  <div class="title">
+    <h1>Mentoras</h1>
+  </div>
+
+ <div class="list">
+    <% @mentoras.each do |mentora| %>
+      <div class = "card">
+          <h3> <%= mentora.name %> </h3>
+          <button class = "btn" >
+              <%= link_to "Visualizar", mentora_path(mentora.id), class: "btn-style" %>
+          </button>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="div-btn">
+    <button class="btn-cadastro">
+      <%= link_to "Cadastrar nova mentora", new_mentora_path,  class: "btn-style"%>
+    </button> 
+  </div>
+</div>

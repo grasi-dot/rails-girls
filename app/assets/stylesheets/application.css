@@ -1,0 +1,172 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.index .title{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(142, 36, 36);
+  color: white;
+  padding: 20px;
+}
+
+.index .list {
+  display: block;
+  background-color: #f0f0f0;
+}
+
+.index .list .card{
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.index .list .card .btn{
+  margin-top: 10px;
+  align-items: center;
+}
+
+.index .div-btn{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+}
+
+button {
+  background-color: rgb(142, 36, 36);
+  height: 25px;
+  width: auto;
+  border-radius: 5px;
+  border-style: none;
+  align-items: center;
+}
+
+.btn-style {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.container .buttons {
+  display: flex;
+  gap: 10px;
+}
+tr
+{
+  background-color: red;
+}
+
+/* Container centralizado */
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+}
+
+/* Estilo da Tabela */
+.table-style {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-style th,
+.table-style td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-style th {
+  background-color: #601f29; /* Cor de fundo do cabeçalho */
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.table-style tr:nth-child(even) {
+  background-color: #f2f2f2; /* Cor para linhas alternadas */
+}
+
+.table-style tr:hover {
+  background-color: #e0f7fa; /* Cor de fundo ao passar o mouse */
+}
+
+.table-style td {
+  font-size: 14px;
+  color: #333333;
+}
+
+/* Ajuste de largura para colunas */
+.table-style th:nth-child(1),
+.table-style td:nth-child(1) {
+  width: 30%; /* Largura para coluna de Nome */
+}
+
+.table-style th:nth-child(2),
+.table-style td:nth-child(2) {
+  width: 40%; /* Largura para coluna de Email */
+}
+
+.table-style th:nth-child(3),
+.table-style td:nth-child(3) {
+  width: 30%; /* Largura para coluna de Habilidades */
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container{
+  margin-top: 10px;
+  text-align: left;
+  background-color: white !important;
+  border-radius: 5px;
+  border-color: grey;
+  margin-block: 20px;
+  text-align: center;
+}
+
+.form-container .create-btn{
+  margin-top: 50px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  margin-block: 20px;
+  background-color: rgb(142, 36, 36);
+  height: 25px;
+  width: auto;
+  border-radius: 5px;
+  border-style: none;
+  align-items: center;
+}
